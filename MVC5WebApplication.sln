@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5WebApplication", "MVC5WebApplication\MVC5WebApplication.csproj", "{FF908883-5060-4EBB-8D36-38BB6D8CDDF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8} = {6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}
+		{96DBE8A5-ACFD-4556-A1C9-ABD83651457D} = {96DBE8A5-ACFD-4556-A1C9-ABD83651457D}
+		{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4} = {7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Models", "MVC5Models\MVC5Models.csproj", "{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5DataServiceInterface", "MVC5DataServiceInterface\MVC5DataServiceInterface.csproj", "{96DBE8A5-ACFD-4556-A1C9-ABD83651457D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5ApplicationService", "MVC5ApplicationService\MVC5ApplicationService.csproj", "{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5EntityFrameworkDataAccess", "MVC5EntityFrameworkDataAccess\MVC5EntityFrameworkDataAccess.csproj", "{945410FC-8B8B-4961-B915-33D64B229529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5AdoDataAccess", "MVC5AdoDataAccess\MVC5AdoDataAccess.csproj", "{483905D8-DC83-403B-A3B2-AE7E3899D482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5SeedData", "MVC5SeedData\MVC5SeedData.csproj", "{BC5C4CD7-FA25-40A3-A6A5-8B00388C6C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5UnitTesting", "MVC5UnitTesting\MVC5UnitTesting.csproj", "{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{74A23C91-9759-4021-98AF-63D38296E25F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5MockedDataAccess", "MVC5MockedDataAccess\MVC5MockedDataAccess.csproj", "{A922AF23-641F-4590-B9CF-5A7182A3EAC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF908883-5060-4EBB-8D36-38BB6D8CDDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF908883-5060-4EBB-8D36-38BB6D8CDDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF908883-5060-4EBB-8D36-38BB6D8CDDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF908883-5060-4EBB-8D36-38BB6D8CDDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC8BBF2-A919-4A07-BA95-1D8FA14BE1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DBE8A5-ACFD-4556-A1C9-ABD83651457D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DBE8A5-ACFD-4556-A1C9-ABD83651457D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DBE8A5-ACFD-4556-A1C9-ABD83651457D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DBE8A5-ACFD-4556-A1C9-ABD83651457D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9EB333-27C2-4D7C-9AEB-F7E873671FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945410FC-8B8B-4961-B915-33D64B229529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945410FC-8B8B-4961-B915-33D64B229529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945410FC-8B8B-4961-B915-33D64B229529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945410FC-8B8B-4961-B915-33D64B229529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483905D8-DC83-403B-A3B2-AE7E3899D482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483905D8-DC83-403B-A3B2-AE7E3899D482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483905D8-DC83-403B-A3B2-AE7E3899D482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483905D8-DC83-403B-A3B2-AE7E3899D482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5C4CD7-FA25-40A3-A6A5-8B00388C6C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5C4CD7-FA25-40A3-A6A5-8B00388C6C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5C4CD7-FA25-40A3-A6A5-8B00388C6C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5C4CD7-FA25-40A3-A6A5-8B00388C6C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A922AF23-641F-4590-B9CF-5A7182A3EAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A922AF23-641F-4590-B9CF-5A7182A3EAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A922AF23-641F-4590-B9CF-5A7182A3EAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A922AF23-641F-4590-B9CF-5A7182A3EAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

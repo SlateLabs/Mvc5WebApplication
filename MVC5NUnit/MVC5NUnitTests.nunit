@@ -1,0 +1,7 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" processModel="Separate" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="..\MVC5UnitTesting\bin\Debug\MVC5UnitTesting.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto" />
+</NUnitProject>

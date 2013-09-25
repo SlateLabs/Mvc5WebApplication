@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\MyFiles\CodeProjectMVC5\MVC5NUnit\MVC5NUnitTests.nunit" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-09-11" time="21:04:15">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5472" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\MyFiles\CodeProjectMVC5\MVC5NUnit" machine-name="CAPLIN-LENOVO" user="CAPLIN" user-domain="CAPLIN-LENOVO" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\MyFiles\CodeProjectMVC5\MVC5NUnit\MVC5NUnitTests.nunit" executed="True" result="Success" success="True" time="23.958" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\MyFiles\CodeProjectMVC5\MVC5NUnit\..\MVC5UnitTesting\bin\Debug\MVC5UnitTesting.dll" executed="True" result="Success" success="True" time="23.939" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="MVC5UnitTesting" executed="True" result="Success" success="True" time="23.938" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="Testing" executed="True" result="Success" success="True" time="23.934" asserts="0">
+                <results>
+                  <test-case name="MVC5UnitTesting.Testing.CreateCustomerIntegrationTest" executed="True" result="Success" success="True" time="12.138" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.CustomerInquiryIntegrationTest" executed="True" result="Success" success="True" time="11.515" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.TestInValidEmailAddress" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.TestValidEmailAddress" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.UpdateCustomerIntegrationTest" executed="True" result="Success" success="True" time="0.151" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.ValidateCustomerWithCheckPayment" executed="True" result="Success" success="True" time="0.009" asserts="1" />
+                  <test-case name="MVC5UnitTesting.Testing.ValidateCustomerWithCreditCardPayment" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

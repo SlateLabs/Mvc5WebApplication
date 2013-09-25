@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2DA5A5A-8818-4C05-AAC4-9A17661721B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVC5UnitTesting</RootNamespace>
+    <AssemblyName>MVC5UnitTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IntegrationTesting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTesting.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC5AdoDataAccess\MVC5AdoDataAccess.csproj">
+      <Project>{483905d8-dc83-403b-a3b2-ae7e3899d482}</Project>
+      <Name>MVC5AdoDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5ApplicationService\MVC5ApplicationService.csproj">
+      <Project>{6e9eb333-27c2-4d7c-9aeb-f7e873671fb8}</Project>
+      <Name>MVC5ApplicationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5DataServiceInterface\MVC5DataServiceInterface.csproj">
+      <Project>{96dbe8a5-acfd-4556-a1c9-abd83651457d}</Project>
+      <Name>MVC5DataServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5EntityFrameworkDataAccess\MVC5EntityFrameworkDataAccess.csproj">
+      <Project>{945410fc-8b8b-4961-b915-33d64b229529}</Project>
+      <Name>MVC5EntityFrameworkDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5MockedDataAccess\MVC5MockedDataAccess.csproj">
+      <Project>{a922af23-641f-4590-b9cf-5a7182a3eac6}</Project>
+      <Name>MVC5MockedDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5Models\MVC5Models.csproj">
+      <Project>{7fc8bbf2-a919-4a07-ba95-1d8fa14be1d4}</Project>
+      <Name>MVC5Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5SeedData\MVC5SeedData.csproj">
+      <Project>{bc5c4cd7-fa25-40a3-a6a5-8b00388c6c32}</Project>
+      <Name>MVC5SeedData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5WebApplication\MVC5WebApplication.csproj">
+      <Project>{ff908883-5060-4ebb-8d36-38bb6d8cddf8}</Project>
+      <Name>MVC5WebApplication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
