@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,11 @@ namespace MVC5SeedData
 
                 DataSet dataSet = new DataSet();
 
-                dataSet.ReadXml(@"c:\myfiles\CodeProjectMVC5\TestData.xml");
+                using (Stream stream = this.GetType().Assembly.
+                    GetManifestResourceStream("MVC5SeedData.TestData.xml"))
+                {
+                    dataSet.ReadXml(stream);
+                }
 
                 int count = dataSet.Tables.Count;
                 int rows = dataSet.Tables[0].Rows.Count;
@@ -217,9 +222,6 @@ namespace MVC5SeedData
 
                 return null;
             }
-                         
-       
         }
-
     }
 }

@@ -27,6 +27,7 @@ namespace MVC5UnitTesting
         [SetUp]
         public void InitializeDependencies()
         {
+            /*
             string integrationType = Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["IntegrationType"]);
 
             if (integrationType=="EntityFramework")
@@ -34,6 +35,7 @@ namespace MVC5UnitTesting
             else if (integrationType=="Ado")
                 customerDataService = new AdoCustomerService();      
             else
+            */
                 customerDataService = new MockedCustomerService();      
 
         }

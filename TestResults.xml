@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\bin\Debug\MVC5UnitTesting.dll" total="7" errors="5" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-09-25" time="14:03:29">
+  <environment nunit-version="2.6.2.12296" clr-version="4.0.30319.33440" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication" machine-name="JimLamb-PC" user="jimlamb" user-domain="NORTHAMERICA" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\bin\Debug\MVC5UnitTesting.dll" executed="True" result="Failure" success="False" time="6.334" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="MVC5UnitTesting" executed="True" result="Failure" success="False" time="6.317" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Testing" executed="True" result="Failure" success="False" time="6.316" asserts="0">
+            <results>
+              <test-case name="MVC5UnitTesting.Testing.CreateCustomerIntegrationTest" executed="True" result="Error" success="False" time="6.170" asserts="0">
+                <failure>
+                  <message><![CDATA[System.ArgumentNullException : Value cannot be null.
+Parameter name: source]]></message>
+                  <stack-trace><![CDATA[at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+at MVC5UnitTesting.Testing.CreateCustomerIntegrationTest() in c:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\IntegrationTesting.cs:line 55
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="MVC5UnitTesting.Testing.CustomerInquiryIntegrationTest" executed="True" result="Error" success="False" time="0.103" asserts="0">
+                <failure>
+                  <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                  <stack-trace><![CDATA[at MVC5UnitTesting.Testing.CustomerInquiryIntegrationTest() in c:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\IntegrationTesting.cs:line 133
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="MVC5UnitTesting.Testing.TestInValidEmailAddress" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="MVC5UnitTesting.Testing.TestValidEmailAddress" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="MVC5UnitTesting.Testing.UpdateCustomerIntegrationTest" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                <failure>
+                  <message><![CDATA[System.ArgumentNullException : Value cannot be null.
+Parameter name: source]]></message>
+                  <stack-trace><![CDATA[at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+at MVC5UnitTesting.Testing.UpdateCustomerIntegrationTest() in c:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\IntegrationTesting.cs:line 100
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="MVC5UnitTesting.Testing.ValidateCustomerWithCheckPayment" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                <failure>
+                  <message><![CDATA[System.ArgumentNullException : Value cannot be null.
+Parameter name: source]]></message>
+                  <stack-trace><![CDATA[at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+at MVC5UnitTesting.Testing.ValidateCustomerWithCheckPayment() in c:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\UnitTesting.cs:line 104
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="MVC5UnitTesting.Testing.ValidateCustomerWithCreditCardPayment" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                <failure>
+                  <message><![CDATA[System.ArgumentNullException : Value cannot be null.
+Parameter name: source]]></message>
+                  <stack-trace><![CDATA[at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+at MVC5UnitTesting.Testing.ValidateCustomerWithCreditCardPayment() in c:\Users\JimLamb\Documents\GitHub\Mvc5WebApplication\MVC5UnitTesting\UnitTesting.cs:line 70
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
